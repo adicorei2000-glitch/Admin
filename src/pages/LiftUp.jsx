@@ -91,9 +91,24 @@ function Counter(){
 
         {/* Todo App */}
      
-         <form id="todoForm">
-        <input type="text" placeholder="add new Task" id="taskInput" />
-        <button type="submit">Add</button>
+         <form style={{ width: "100%",
+  padding: "10px",
+  marginTop: "10px",
+  borderRadius: "8px",
+  gap: "10px",  display: "flex",
+  flexDirection: "column",  
+  border: "1px solid #ccc",}} id="todoForm">
+        <input style={{width: "100%",
+  padding: "10px",
+  marginTop: "10px",
+  borderRadius: "8px",
+  border: "1px solid #ccc",}} type="text" placeholder="add new Task" id="taskInput" />
+        <button style={{ padding: "10px 20px",
+  borderRadius: "8px",
+  border: "none",
+  cursor: "pointer",
+  fontSize: "18px",
+  color: "white",}} onClick={() => setCount(+1)}  type="submit">Add</button>
 
         <ul id="taskList"></ul>
     </form>
@@ -113,7 +128,7 @@ function Counter(){
 
 
  
-
+ 
 
 
 const container = {
