@@ -9,6 +9,9 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import OrderTable from './assets/components/OrderTable'
 import Homepage from './pages/homepage'
 import Contact from './pages/contact'
+import LiftUp from './pages/LiftUp'
+
+
 
 
 
@@ -25,6 +28,8 @@ const RouterComp = () => {
                         <Route path="Homepage" element={<Homepage />} />
                      <Route path="table/OrderTable" element={<OrderTable />} />
                      <Route path="contact" element={<Contact />} />
+                     <Route path="LiftUP" element={<LiftUp />} />
+                 
                   
 
          

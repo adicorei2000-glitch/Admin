@@ -102,7 +102,7 @@ const Homepage = () => {
     </section>
 
       <div style={{ marginTop: "30px" }}>
-        <button onClick={() => navigate("/table")} style={{ 
+        <button onClick={() => navigate("/LiftUP")} style={{ 
           padding: "10px 20px",
           marginRight: "10px",
           backgroundColor: "#6366f1",
