@@ -126,7 +126,7 @@ export default function Sidebar() {
         <IconButton variant="soft" color="primary" size="sm">
           <BrightnessAutoRoundedIcon />
         </IconButton>
-        <Typography level="title-lg">Adi</Typography>
+        <Typography level="title-lg">AR7</Typography>
         <ColorSchemeToggle sx={{ ml: 'auto' }} />
       </Box>
       <Input size="sm" startDecorator={<SearchRoundedIcon />} placeholder="Search" />
@@ -308,7 +308,7 @@ export default function Sidebar() {
         <Avatar
           variant="outlined"
           size="sm"
-          src="public/image.jpg"
+          src="./src/assets/components/image.jpg"   alt="photo of Adi"  
         />
         <Box sx={{ minWidth: 0, flex: 1 }}>
           <Typography level="title-sm">Adi_dev</Typography>
