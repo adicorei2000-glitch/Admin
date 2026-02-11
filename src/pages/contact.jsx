@@ -71,7 +71,7 @@ function Contact() {
 >
             <FaInstagram size={22} />
             
-        📸 <span>@adi_corei</span>
+         <span>@adi_corei</span>
         </a>    
 
         {/* LinkedIn */}
