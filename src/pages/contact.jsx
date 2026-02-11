@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTelegram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaEnvelope, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -49,6 +49,16 @@ function Contact() {
         >
           <FaTelegram size={22} />
           <span>@marksman_adli</span>
+        </a>
+        {/* GitHub */}
+            <a
+            href="https://github.com/adicorei2000-glitch"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={linkStyle}
+>
+        <FaGithub size={22} />
+        <span>GitHub Profile</span>
         </a>
 
         {/* LinkedIn */}
