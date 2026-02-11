@@ -33,6 +33,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ColorSchemeToggle from './ColorSchemeToggle';
 import { closeSidebar } from '../../utils';
 import { Link } from 'react-router';
+import { Image } from "./image";
 
 
 function Toggler({
@@ -308,8 +309,10 @@ export default function Sidebar() {
         <Avatar
           variant="outlined"
           size="sm"
-          src="./src/assets/components/image.jpg"   alt="photo of Adi"  
+            src="./src/assets/components/image.jpg"
+         
         />
+        
         <Box sx={{ minWidth: 0, flex: 1 }}>
           <Typography level="title-sm">Adi_dev</Typography>
           <Typography level="body-xs">adi.corei.2000@gmail.com</Typography>
