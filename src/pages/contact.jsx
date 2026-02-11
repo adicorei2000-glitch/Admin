@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTelegram, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaEnvelope, FaGithub , FaInstagram} from "react-icons/fa";
 
 function Contact() {
   return (
@@ -60,6 +60,19 @@ function Contact() {
         <FaGithub size={22} />
         <span>GitHub Profile</span>
         </a>
+
+        {/*Instagram */}
+        <a
+          href="https://www.instagram.com/adi_corei/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={linkStyle}
+            
+>
+            <FaInstagram size={22} />
+            
+        📸 <span>@adi_corei</span>
+        </a>    
 
         {/* LinkedIn */}
         <a
