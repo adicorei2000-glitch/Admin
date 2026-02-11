@@ -1,27 +1,88 @@
-import React from "react";
+import { FaLinkedin, FaTelegram, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div style={{ padding: "80px", fontFamily: "Arial" }}>
-      <h1 style={{ fontSize: "40px" }}>Contact Me</h1>
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#f8fafc",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "60px",
+          borderRadius: "20px",
+          width: "600px",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.08)",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "42px",
+            marginBottom: "40px",
+            color: "#111827",
+          }}
+        >
+          Let’s Connect
+        </h1>
 
-      <p style={{ border: "1px solid #ccc", padding: "10px", fontSize: "20px", marginTop: "20px", opacity: "0.8" , marginBottom: "10px", hover: { backgroundColor: "#f3f4f6" }, cursor: "pointer" }}>
-        Email: adi.corei.2000@gmail.com
-      </p>
+        {/* Email */}
+        <a
+          href="mailto:adi.corei.2000@gmail.com"
+          style={linkStyle}
+        >
+          <FaEnvelope size={22} />
+          <span>adi.corei.2000@gmail.com</span>
+        </a>
 
-      <p style={{ border: "1px solid #ccc", padding: "10px", fontSize: "20px", marginTop: "10px", opacity: "0.8", marginBottom: "10px", hover: { backgroundColor: "#f3f4f6" }, cursor: "pointer" }}>
-        Telegram: @marksman_adii
-      </p>
-      <p style={{ border: "1px solid #ccc", padding: "10px", fontSize: "20px", marginTop: "10px", opacity: "0.8", marginBottom: "10px", hover: { backgroundColor: "#f3f4f6" }, cursor: "pointer" }}>
-        LinkedIn: <a href="https://www.linkedin.com/in/abdurahmon-abdullayev-21102b3a4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style={{ color: "#6366f1", textDecoration: "none" }}>
-          linkedin.com/in/abdurahmon-adiyev-9b1a4b1b3/
-        </a>    
-      </p>
-      <p style={{ border: "1px solid #ccc", padding: "10px", fontSize: "20px", marginTop: "10px", opacity: "0.8", marginBottom: "10px", hover: { backgroundColor: "#f3f4f6" }, cursor: "pointer" }}>
-        Number: +82 010-6880-9752
-      </p>
+        {/* Telegram */}
+        <a
+          href="https://t.me/marksman_adli"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={linkStyle}
+        >
+          <FaTelegram size={22} />
+          <span>@marksman_adli</span>
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/abdurahmon-adiyev-9b1a4b1b3/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={linkStyle}
+        >
+          <FaLinkedin size={22} />
+          <span>LinkedIn Profile</span>
+        </a>
+
+        {/* Phone */}
+        <a
+          href="tel:+821068809752"
+          style={linkStyle}
+        >
+          📱 <span>+82 010-6880-9752</span>
+        </a>
+
+      </div>
     </div>
   );
 }
+
+const linkStyle = {
+  display: "flex",
+  alignItems: "center",
+  gap: "15px",
+  fontSize: "20px",
+  marginBottom: "25px",
+  color: "#374151",
+  textDecoration: "none",
+};
 
 export default Contact;
